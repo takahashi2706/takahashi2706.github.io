@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	font-size: 15px;
+	line-height: 2;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+h2 {
+	padding: 10px 0;
+	color: #eee;
+	font-size: 35px;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #3583aa;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #788d98;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.cf {
+	clear: both;
+}
+
+.wrap {
+	width: 80%;
+	float: left;
+}
+
+nav {
+	float: right;
+	display: inline-block;
+	top: 150px;
+	right: 5%;
+	position: fixed;
+	width: 10%;
+	color: #eee;
+}
+
+nav ul li {
+	display: block;
+	margin: 5px 0;
+	list-style: none;
+	font-size: 14px;
+}
+
+#top,#profile,#portfolio,#contact {
+	height: 100vh;
+	padding-left: 10%;
+	padding-right: 0%;
+}
+
+#top,#profile,#portfolio {
+	margin-bottom: 100px;
+}
+
+#contact {
+	height: 300px;
+}
+
+.pmd-card {
+	display: inline-block;
+}
+
+.pmd-card-media img {
+	object-fit: cover;
+	width: 100%;
+	height: 200px;
+}
+
+#top {
+	position: relative;
+	margin-right: -25%;
+	background-color: #483d8b;
+}
+
+.girl {
+	position: absolute;
+	width: 80px;
+	height: auto;
+	right: 20%;
+	top: 70%;
+}
+
+.prof-img {
+	display: inline-block;
+	width: 35%;
+	height: 600px;
+}
+
+.prof-description {
+	float: right;
+	display: inline-block;
+	width: 65%;
+	height: 600px;
+}
+
+#portfolio {
+	height: 200vh;
+}
+
+.work {
+	float: left;
+	display: inline-block;
+	width: 31%;
+	margin-right: 3%;
+}
+.work:nth-child(3n){
+	margin-right: 0;
+}
+
+.description {
+	display: inline-block;
+	position: static;
+	top: 0;
+	left: 37%;
+	width: 53%;
+	color: #eee;
+}
+
+.description2,.description3 {
+	display: none;
+}
+
+.mail {
+	padding: 5px 10px;
+	border: 2px solid #999;
+	border-radius: 3px;
+	background-color: #eee;
+}
