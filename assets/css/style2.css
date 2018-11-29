@@ -17,7 +17,8 @@ p,h1,h2,h3,h4,h5,h6 {
 h2 {
 	margin: 20px 0;
 	font-size: 30px;
-	text-align: center;
+    font-weight: medium;
+	text-align: left;
 	color: #555;
 }
 
@@ -40,7 +41,7 @@ a:hover {
 }
 
 .content {
-	width: 85%;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -48,11 +49,12 @@ a:hover {
 	width: 100%;
 	position: fixed;
 	background-color: rgba(0,0,0,0.8);
+    z-index: 1;
 }
 
 .nav ul {
-	padding: 10px 0;
-	text-align: center;
+	padding: 10px 8% 10px 0;
+	text-align: right;
 }
 
 .nav ul li {
@@ -61,7 +63,7 @@ a:hover {
 }
 
 .nav ul li:not(:nth-child(4)) {
-	margin-right: 15px;
+	margin-right: 20px;
 }
 
 .nav ul li a {
@@ -86,7 +88,22 @@ a:hover {
 #figure .inner div {
     position: absolute;
     display: block;
-    font-size: 30px;
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+#figure .inner div.blue {
+	width: 8px;
+	height: 8px;
+	background-color: #6699cc;
+	border-radius: 3px;
+}
+#figure .inner div.red {
+	width: 8px;
+	height: 8px;
+	background-color: #cc3333;
+	border-radius: 3px;
 }
 
 .figure1 {
@@ -160,14 +177,12 @@ a:hover {
 }
 
 .figure2_blue {
-	color: #6699cc;
     left: 7%;
     -webkit-animation-duration: 4.2s;
     animation-duration: 4.2s;
 }
 
 .figure4_blue {
-	color: #6699cc;
     left: 17%;
     -webkit-animation-duration: 4.8s;
     animation-duration: 4.8s;
@@ -176,7 +191,6 @@ a:hover {
 }
 
 .figure6_blue {
-	color: #6699cc;
     left: 27%;
     -webkit-animation-duration: 5.1s;
     animation-duration: 5.1s;
@@ -185,7 +199,6 @@ a:hover {
 }
 
 .figure8_blue {
-	color: #6699cc;
     left: 37%;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
@@ -194,7 +207,6 @@ a:hover {
 }
 
 .figure1_blue {
-	color: #6699cc;
     left: 47%;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
@@ -203,7 +215,6 @@ a:hover {
 }
 
 .figure3_blue {
-	color: #6699cc;
     left: 57%;
     -webkit-animation-duration: 3.8s;
     animation-duration: 3.8s;
@@ -212,7 +223,6 @@ a:hover {
 }
 
 .figure5_blue {
-	color: #6699cc;
     left: 67%;
     -webkit-animation-duration: 4.2s;
     animation-duration: 4.2s;
@@ -221,7 +231,6 @@ a:hover {
 }
 
 .figure7_blue {
-	color: #6699cc;
     left: 77%;
     -webkit-animation-duration: 4.6s;
     animation-duration: 4.6s;
@@ -230,7 +239,6 @@ a:hover {
 }
 
 .figure9_blue {
-	color: #6699cc;
     left: 87%;
     -webkit-animation-duration: 4.8s;
     animation-duration: 4.8s;
@@ -239,14 +247,12 @@ a:hover {
 }
 
 .figure1_red {
-	color: #cc3333;
     left: -2%;
     -webkit-animation-duration: 4.2s;
     animation-duration: 4.2s;
 }
 
 .figure3_red {
-	color: #cc3333;
     left: 12%;
     -webkit-animation-duration: 4.8s;
     animation-duration: 4.8s;
@@ -255,7 +261,6 @@ a:hover {
 }
 
 .figure5_red {
-	color: #cc3333;
     left: 26%;
     -webkit-animation-duration: 5.1s;
     animation-duration: 5.1s;
@@ -264,7 +269,6 @@ a:hover {
 }
 
 .figure7_red {
-	color: #cc3333;
     left: 40%;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
@@ -273,7 +277,6 @@ a:hover {
 }
 
 .figure9_red {
-	color: #cc3333;
     left: 54%;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
@@ -282,7 +285,6 @@ a:hover {
 }
 
 .figure2_red {
-	color: #cc3333;
     left: 68%;
     -webkit-animation-duration: 3.8s;
     animation-duration: 3.8s;
@@ -291,7 +293,6 @@ a:hover {
 }
 
 .figure4_red {
-	color: #cc3333;
     left: 82%;
     -webkit-animation-duration: 4.2s;
     animation-duration: 4.2s;
@@ -300,7 +301,6 @@ a:hover {
 }
 
 .figure6_red {
-	color: #cc3333;
     left: 94%;
     -webkit-animation-duration: 4.6s;
     animation-duration: 4.6s;
@@ -309,7 +309,6 @@ a:hover {
 }
 
 .figure8_red {
-	color: #cc3333;
     left: 102%;
     -webkit-animation-duration: 4.8s;
     animation-duration: 4.8s;
@@ -331,8 +330,8 @@ a:hover {
     }
 
     100% {
-        -webkit-transform: translateY(90vh);
-        transform: translateY(90vh);
+        -webkit-transform: translateY(92vh);
+        transform: translateY(92vh);
         opacity: 0.3;
     }
 }
@@ -351,8 +350,8 @@ a:hover {
     }
 
     100% {
-        -webkit-transform: translateY(90vh);
-        transform: translateY(90vh);
+        -webkit-transform: translateY(92vh);
+        transform: translateY(92vh);
         opacity: 0.3;
     }
 }
@@ -372,6 +371,7 @@ a:hover {
 #top .top-comment {
 	position: absolute;
 	top: 40%;
+	left: 23%;
 	font-size: 45px;
 	color: #555;
 }
@@ -382,12 +382,16 @@ a:hover {
 }
 
 #portfolio {
-	height: 190vh;
+	height: 200vh;
 }
 
 #portfolio .work {
 	float: left;
 	width: 30%;
+}
+
+#portfolio .pmd-card {
+    margin-bottom: 100px;
 }
 
 .description {
@@ -396,6 +400,16 @@ a:hover {
 	padding: 15px;
 	width: 65%;
 	background-color: #EAEAEA;
+}
+
+.description1 {
+    position: fixed;
+    top: 100px;
+    left: 485px;
+}
+
+.description2,.description3,.description4 {
+    display: none;
 }
 
 #contact {
