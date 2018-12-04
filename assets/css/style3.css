@@ -2,28 +2,40 @@
 /* CSS Document */
 
 body {
-	margin: 0;
-	padding: 0;
-	background-color: #F5F5F5;
-	font-size: 15px;
-	line-height: 2;
-	font-family: 'Chakra Petch', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    /*background: linear-gradient(#05FBFF, #1E00FF);*/
+    /*background: linear-gradient(-135deg, #E4A972, #872DE3);*/
+    /*background: linear-gradient(-135deg, #E08742, #B142E0);*/
+    font-size: 15px;
+    line-height: 2;
+    font-family: 'Noto Sans SC', sans-serif;
 }
 
 p,h1,h2,h3,h4,h5,h6 {
-	margin: 0;
+    margin: 0;
 }
 
 h2 {
-	margin: 20px 0;
-	font-size: 30px;
-	text-align: center;
-	color: #555;
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: medium;
+    text-align: center;
+    color: #666;
+}
+
+.nav,.top-comment,h2 {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.material-icons {
+    color: #000;
 }
 
 ul {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -36,36 +48,37 @@ a:hover {
 }
 
 .cf {
-	clear: both;
+    clear: both;
 }
 
 .content {
-	width: 85%;
-	margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .nav {
-	width: 100%;
-	position: fixed;
-	background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
 }
 
 .nav ul {
-	padding: 10px 0;
-	text-align: center;
+    padding: 10px 8% 10px 0;
+    text-align: right;
 }
 
 .nav ul li {
-	display: inline;
-	list-style: none;
+    display: inline;
+    list-style: none;
 }
 
 .nav ul li:not(:nth-child(4)) {
-	margin-right: 15px;
+    margin-right: 20px;
 }
 
 .nav ul li a {
-	color: #fff;
+    color: #fff;
 }
 
 #top section .inner div {
@@ -86,7 +99,24 @@ a:hover {
 #figure .inner div {
     position: absolute;
     display: block;
-    font-size: 30px;
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+#figure .inner div.blue {
+    width: 8px;
+    height: 8px;
+    background-color: #6699cc;
+    border-radius: 3px;
+    color: #ddd;
+}
+#figure .inner div.red {
+    width: 8px;
+    height: 8px;
+    background-color: #cc3333;
+    border-radius: 3px;
+    color: #ddd;
 }
 
 .figure1 {
@@ -160,14 +190,12 @@ a:hover {
 }
 
 .figure2_blue {
-	color: #6699cc;
     left: 7%;
     -webkit-animation-duration: 4.2s;
     animation-duration: 4.2s;
 }
 
 .figure4_blue {
-	color: #6699cc;
     left: 17%;
     -webkit-animation-duration: 4.8s;
     animation-duration: 4.8s;
@@ -176,7 +204,6 @@ a:hover {
 }
 
 .figure6_blue {
-	color: #6699cc;
     left: 27%;
     -webkit-animation-duration: 5.1s;
     animation-duration: 5.1s;
@@ -185,7 +212,6 @@ a:hover {
 }
 
 .figure8_blue {
-	color: #6699cc;
     left: 37%;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
@@ -194,7 +220,6 @@ a:hover {
 }
 
 .figure1_blue {
-	color: #6699cc;
     left: 47%;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
@@ -203,7 +228,6 @@ a:hover {
 }
 
 .figure3_blue {
-	color: #6699cc;
     left: 57%;
     -webkit-animation-duration: 3.8s;
     animation-duration: 3.8s;
@@ -212,7 +236,6 @@ a:hover {
 }
 
 .figure5_blue {
-	color: #6699cc;
     left: 67%;
     -webkit-animation-duration: 4.2s;
     animation-duration: 4.2s;
@@ -221,7 +244,6 @@ a:hover {
 }
 
 .figure7_blue {
-	color: #6699cc;
     left: 77%;
     -webkit-animation-duration: 4.6s;
     animation-duration: 4.6s;
@@ -230,7 +252,6 @@ a:hover {
 }
 
 .figure9_blue {
-	color: #6699cc;
     left: 87%;
     -webkit-animation-duration: 4.8s;
     animation-duration: 4.8s;
@@ -239,14 +260,12 @@ a:hover {
 }
 
 .figure1_red {
-	color: #cc3333;
     left: -2%;
     -webkit-animation-duration: 4.2s;
     animation-duration: 4.2s;
 }
 
 .figure3_red {
-	color: #cc3333;
     left: 12%;
     -webkit-animation-duration: 4.8s;
     animation-duration: 4.8s;
@@ -255,7 +274,6 @@ a:hover {
 }
 
 .figure5_red {
-	color: #cc3333;
     left: 26%;
     -webkit-animation-duration: 5.1s;
     animation-duration: 5.1s;
@@ -264,7 +282,6 @@ a:hover {
 }
 
 .figure7_red {
-	color: #cc3333;
     left: 40%;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
@@ -273,7 +290,6 @@ a:hover {
 }
 
 .figure9_red {
-	color: #cc3333;
     left: 54%;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
@@ -282,7 +298,6 @@ a:hover {
 }
 
 .figure2_red {
-	color: #cc3333;
     left: 68%;
     -webkit-animation-duration: 3.8s;
     animation-duration: 3.8s;
@@ -291,7 +306,6 @@ a:hover {
 }
 
 .figure4_red {
-	color: #cc3333;
     left: 82%;
     -webkit-animation-duration: 4.2s;
     animation-duration: 4.2s;
@@ -300,7 +314,6 @@ a:hover {
 }
 
 .figure6_red {
-	color: #cc3333;
     left: 94%;
     -webkit-animation-duration: 4.6s;
     animation-duration: 4.6s;
@@ -309,7 +322,6 @@ a:hover {
 }
 
 .figure8_red {
-	color: #cc3333;
     left: 102%;
     -webkit-animation-duration: 4.8s;
     animation-duration: 4.8s;
@@ -331,8 +343,8 @@ a:hover {
     }
 
     100% {
-        -webkit-transform: translateY(90vh);
-        transform: translateY(90vh);
+        -webkit-transform: translateY(92vh);
+        transform: translateY(92vh);
         opacity: 0.3;
     }
 }
@@ -351,21 +363,101 @@ a:hover {
     }
 
     100% {
-        -webkit-transform: translateY(90vh);
-        transform: translateY(90vh);
+        -webkit-transform: translateY(92vh);
+        transform: translateY(92vh);
         opacity: 0.3;
     }
 }
 
+#top,#profile {
+    height: 110vh;
+}
+
+#top,#portfolio {
+    margin-bottom: 80px;
+}
+
 #top {
-	margin-bottom: 80px;
-	position: relative;
+    position: relative;
 }
 
 #top .top-comment {
-	position: absolute;
-	top: 40%;
-    left: 23%;
-	font-size: 45px;
-	color: #555;
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    font-size: 45px;
+    color: #eee;
+    opacity: 0;
+}
+
+.top-comment span {
+    opacity: 0;
+}
+
+#profile {
+    margin-top: -70px;
+    padding-top: 70px;
+}
+
+#profile .pmd-card {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    border-radius: 10px;
+}
+
+#profile h2 {
+    margin-left: 20px;
+    color: #777;
+}
+
+#portfolio {
+    margin-top: -50px;
+    padding-top: 50px;
+    height: 210vh;
+}
+
+#portfolio h2 {
+    position: static;
+}
+
+#portfolio .work {
+    float: left;
+    width: 30%;
+}
+
+#portfolio .pmd-card {
+    margin-bottom: 60px;
+}
+
+.description {
+    float: right;
+    display: inline-block;
+    padding: 15px;
+    width: 65%;
+    background-color: rgba(250,250,250,0.8);
+    border-radius: 2px;
+}
+
+.description1 {
+    position: fixed;
+    top: 100px;
+    left: 485px;
+}
+
+.description2,.description3,.description4 {
+    display: none;
+}
+
+#contact {
+    height: 50vh;
+}
+
+footer {
+    background-color: #CECECE;
+}
+
+footer div {
+    padding: 15px 0;
+    text-align: center;
 }
