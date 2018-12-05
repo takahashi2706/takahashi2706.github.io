@@ -30,32 +30,39 @@ $(function() {
 	var des1 = $(".description1").html();
 	var des2 = $(".description2").html();
 	var des3 = $(".description3").html();
+	var des4 = $(".description4").html();
+	var des5 = $(".description5").html();
 
 	$(window).scroll(function(){
 		var scr_count = $(this).scrollTop();
 		if(scr_count < 1890) {
 			$(".description1").css("position","static");
 			$(".description1").css("width","60%");
-
 		}
 		if(scr_count >= 1890) {
 			$(".description1").css("position","fixed");
 			$(".description1").css("width","52%");
 
 		}
-		if(scr_count >= 2950) {
+		if(scr_count >= 3850) {
 			$(".description1").css("position","static");
 			$(".description1").css("width","60%");
 
 		}
-		if(scr_count < 2160) {
+		if(scr_count < 2200) {
 			$(".description1").html(des1);
 		}
-		if(scr_count >= 2160 && scr_count < 2610) {
+		if(scr_count >= 2200 && scr_count < 2530) {
 			$(".description1").html(des2);
 		}
-		if(scr_count >= 2610) {
+		if(scr_count >= 2530 && scr_count < 2930) {
 			$(".description1").html(des3);
+		}
+		if(scr_count >= 2930 && scr_count < 3300) {
+			$(".description1").html(des4);
+		}
+		if(scr_count >= 3300) {
+			$(".description1").html(des5);
 		}
 	})
 })
