@@ -4,13 +4,14 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #F5F5F5;
+	background-color: #000;
     /*background: linear-gradient(#05FBFF, #1E00FF);*/
     /*background: linear-gradient(-135deg, #E4A972, #872DE3);*/
     /*background: linear-gradient(-135deg, #E08742, #B142E0);*/
+    background: linear-gradient(-180deg, #000, #777);
 	font-size: 15px;
 	line-height: 2;
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 p,h1,h2,h3,h4,h5,h6 {
@@ -19,18 +20,19 @@ p,h1,h2,h3,h4,h5,h6 {
 
 h2 {
 	margin: 20px 0;
-	font-size: 30px;
+	font-size: 40px;
     font-weight: medium;
-	text-align: center;
+	text-align: left;
 	color: #666;
+    margin-left: -1%;
 }
 
-.nav,.top-comment,h2 {
+/*.nav,.top-comment {
     font-family: 'Chakra Petch', sans-serif;
-}
+}*/
 
 .material-icons {
-    color: #000;
+    color: #333;
 }
 
 ul {
@@ -52,7 +54,7 @@ a:hover {
 }
 
 .content {
-	width: 80%;
+	width: 75%;
 	margin: 0 auto;
 }
 
@@ -71,14 +73,11 @@ a:hover {
 .nav ul li {
 	display: inline;
 	list-style: none;
+    color: #eee;
 }
 
 .nav ul li:not(:nth-child(4)) {
 	margin-right: 20px;
-}
-
-.nav ul li a {
-	color: #fff;
 }
 
 #top section .inner div {
@@ -341,8 +340,8 @@ a:hover {
     }
 
     100% {
-        -webkit-transform: translateY(92vh);
-        transform: translateY(92vh);
+        -webkit-transform: translateY(110vh);
+        transform: translateY(110vh);
         opacity: 0.3;
     }
 }
@@ -361,14 +360,14 @@ a:hover {
     }
 
     100% {
-        -webkit-transform: translateY(92vh);
-        transform: translateY(92vh);
+        -webkit-transform: translateY(110vh);
+        transform: translateY(110vh);
         opacity: 0.3;
     }
 }
 
 #top,#profile {
-	height: 110vh;
+	height: 130vh;
 }
 
 #top,#portfolio {
@@ -381,10 +380,10 @@ a:hover {
 
 #top .top-comment {
 	position: absolute;
-	top: 30%;
-	left: 16%;
+	top: 35%;
+	left: 30%;
 	font-size: 45px;
-	color: #444;
+	color: #555;
     opacity: 0;
 }
 
@@ -393,54 +392,74 @@ a:hover {
 }
 
 #profile {
-    margin-top: -70px;
-    padding-top: 70px;
+    margin-top: -40px;
+    padding-top: 40px;
+}
+
+#profile h2 {
+    margin-bottom: 5px;
+    padding: 15px 0;
+    color: #999;
 }
 
 #profile .pmd-card {
     position: relative;
-	width: 100%;
-    height: 85%;
-    border-radius: 10px;
+    height: 75vh;
+    background-color: #111;
 }
 
-#profile h2 {
-    margin-left: 20px;
-    color: #777;
+.prof-img {
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    opacity: 0.7;
 }
 
 #portfolio {
     margin-top: -50px;
     padding-top: 50px;
-	height: 210vh;
+    height: 200vh;
+	/*height: 330vh;*/
 }
 
 #portfolio h2 {
-    position: static;
+    color: #ccc;
+    margin-bottom: 40px;
 }
 
 #portfolio .work {
 	float: left;
-	width: 30%;
+	width: 35%;
 }
 
 #portfolio .pmd-card {
     margin-bottom: 60px;
+    background: #eee;
 }
 
 .description {
 	float: right;
 	display: inline-block;
-	padding: 15px;
+    padding-left: 10%;
 	width: 65%;
-	background-color: rgba(250,250,250,0.8);
-    border-radius: 2px;
+    color: #eee;
+    font-size: 16px;
+}
+
+.description span {
+    display: inline-block;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .description1 {
     position: fixed;
-    top: 100px;
-    left: 485px;
+    top: 10%;
+    left: 40%;
+}
+
+.description3 span {
+    font-size: 22px;
 }
 
 .description2,.description3,.description4 {
@@ -448,7 +467,20 @@ a:hover {
 }
 
 #contact {
-	height: 50vh;
+    position: relative;
+	height: 30vh;
+}
+
+#contact h2 {
+    display: inline-block;
+    color: #ccc;
+}
+
+#contact .mail {
+    position: absolute;
+    top: 30px;
+    margin-left: 10%;
+    color: #fff;
 }
 
 footer {
