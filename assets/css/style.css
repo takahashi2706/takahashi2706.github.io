@@ -407,12 +407,13 @@ a:hover {
     padding: 50px;
     height: 75vh;
     background-color: #111;
-    color: #bbb;
+    color: #aaa;
 }
 
 .left-box,.right-box {
     display: inline-block;
     width: 50%;
+    line-height: 2.2;
 }
 
 .left-box {
@@ -422,7 +423,12 @@ a:hover {
 }
 
 .right-box {
+    padding-top: 7%;
     padding-right: 5%;
+}
+
+.right-box span {
+    border-bottom: solid 2px #2B4269;
 }
 
 .prof-img {
