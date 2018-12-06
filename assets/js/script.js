@@ -49,19 +49,19 @@ $(function() {
 			$(".description1").css("width","60%");
 
 		}
-		if(scr_count < 2200) {
+		if(scr_count < 2180) {
 			$(".description1").html(des1);
 		}
-		if(scr_count >= 2200 && scr_count < 2530) {
+		if(scr_count >= 2180 && scr_count < 2510) {
 			$(".description1").html(des2);
 		}
-		if(scr_count >= 2530 && scr_count < 2930) {
+		if(scr_count >= 2510 && scr_count < 2850) {
 			$(".description1").html(des3);
 		}
-		if(scr_count >= 2930 && scr_count < 3300) {
+		if(scr_count >= 2850 && scr_count < 3180) {
 			$(".description1").html(des4);
 		}
-		if(scr_count >= 3300) {
+		if(scr_count >= 3180) {
 			$(".description1").html(des5);
 		}
 	})
